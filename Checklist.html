@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checklist - BioSecure Farm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">BioSecure Farm</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="register.html">Farm Registration</a>
+      <a href="checklist.html">Checklist</a>
+      <a href="alerts.html">Alerts</a>
+      <a href="guidance.html">Guidance</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Biosecurity Checklist</h2>
+
+    <div class="card checklist">
+      <label><input type="checkbox" class="riskItem" value="10"> Visitor entry is restricted.</label>
+      <label><input type="checkbox" class="riskItem" value="15"> Animals are vaccinated on time.</label>
+      <label><input type="checkbox" class="riskItem" value="15"> Feed and water are kept clean.</label>
+      <label><input type="checkbox" class="riskItem" value="10"> Farm tools are disinfected regularly.</label>
+      <label><input type="checkbox" class="riskItem" value="10"> Sick animals are isolated immediately.</label>
+      <label><input type="checkbox" class="riskItem" value="10"> Waste is disposed safely.</label>
+
+      <button class="btn" onclick="calculateRisk()">Calculate Risk Score</button>
+      <p id="riskResult"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
